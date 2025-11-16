@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós - Ki-Sucesso</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><!-- MENU LATERAL --><div class="menu-lateral" id="menu">
+    <div class="menu-top">
+        <h2>Menu</h2>
+        <span id="btnClose">✖</span>
+    </div>
+    <a href="index.html">🏠 Início</a>
+    <a href="produtos.html">🛒 Produtos</a>
+    <a href="carrinho.html">🛍 Meu Carrinho</a>
+    <a href="sobre.html">ℹ️ Sobre Nós</a>
+    <a href="contato.html">☎️ Contato</a>
+</div>
+<div class="menu-backdrop" id="backdrop"></div><!-- TOPO --><div class="topbar">
+    <div class="left-icons">
+        <i id="btnMenu">☰</i>
+    </div><div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Logo Ki-Sucesso">
+    </a>
+</div>
+
+<a href="carrinho.html" class="cart">🛒</a>
+
+</div><!-- CONTEÚDO PRINCIPAL --><div class="sobre-container" style="padding: 20px; max-width: 900px; margin: auto;"><h1 style="margin-bottom: 20px; text-align:center;">Sobre a Ki-Sucesso</h1>
+
+<p style="margin-bottom:20px; font-size: 18px; line-height:1.6;">
+    Localizada no coração do Brás, a Ki-Sucesso nasceu do desejo de levar sabor, tradição e inovação para todos os cantos do Brasil. 
+    Valorizamos a cultura brasileira e buscamos sempre ampliar nosso catálogo com produtos diferenciados que vão além da pururuca e da batata chips, trazendo novidades pensadas para surpreender e encantar.
+</p>
+
+<p style="margin-bottom:20px; font-size: 18px; line-height:1.6;">
+    Nossa missão é oferecer petiscos de qualidade superior, mantendo sempre nossos valores de autenticidade, compromisso e respeito pelo consumidor. 
+    Buscamos fortalecer a confiança dos nossos clientes por meio de produtos frescos, crocantes e produzidos com rigor, garantindo que cada experiência seja marcante.
+</p>
+
+<h2 style="margin-top: 30px; margin-bottom: 15px;">Nossa Essência</h2>
+
+<p style="margin-bottom:20px; font-size: 18px; line-height:1.6;">
+    "Pururuca e Batata Chips Ki-Sucesso: lanchinhos que transformam o dia. Petiscos práticos que carregam o sabor de infância, perfeitos para a tarde, para aqueles momentos de pausa ou para criar memórias com quem você ama, pra você comer aonde estiver, mas que têm lugar garantido no cotidiano brasileiro. 
+    Cada mordida traz a crocância que você conhece e aprecia — sempre fresca, sempre crocante — tornando o comum… especial.”
+</p>
+
+<h2 style="margin-top: 30px; margin-bottom: 15px;">Para Você, Revendedor</h2>
+
+<p style="margin-bottom: 20px; font-size: 18px; line-height:1.6;">
+    “Na Ki-Sucesso, oferecemos fardos de Pururuca e Batata Chips de alta qualidade, prontos para revenda. Nossa loja virtual garante um processo simples e seguro para você adquirir produtos autênticos brasileiros, sempre frescos e crocantes, prontos para encantar seus clientes. 
+    Faça seu pedido e leve o sabor da Ki-Sucesso diretamente para o seu negócio.”
+</p>
+
+</div><!-- SCRIPT DO MENU --><script>
+    const btnMenu = document.getElementById("btnMenu");
+    const btnClose = document.getElementById("btnClose");
+    const menu = document.getElementById("menu");
+    const backdrop = document.getElementById("backdrop");
+
+    btnMenu.onclick = () => {
+        menu.classList.add("open");
+        backdrop.classList.add("show");
+    }
+
+    btnClose.onclick = backdrop.onclick = () => {
+        menu.classList.remove("open");
+        backdrop.classList.remove("show");
+    }
+</script></body>
+</html>

@@ -1,0 +1,126 @@
+<!-- Novo index.html com layout completo atualizado --><!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Ki-Sucesso</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><!-- ✅ MENU LATERAL --><div class="menu-lateral" id="menu">
+    <div class="menu-top">
+        <h2>Menu</h2>
+        <span id="btnClose">✖</span>
+    </div>
+    <a href="index.html">🏠 Início</a>
+    <a href="produtos.html">🛒 Produtos</a>
+    <a href="carrinho.html">🛍 Meu Carrinho</a>
+    <a href="sobre.html">ℹ️ Sobre Nós</a>
+    <a href="contato.html">☎️ Contato</a>
+</div>
+<div class="menu-backdrop" id="backdrop"></div><!-- ✅ TOPO --><div class="topbar">
+    <div class="left-icons">
+        <i id="btnMenu">☰</i>
+        
+    </div>
+    
+    <div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Logo Ki-Sucesso">
+    </a>
+</div>
+
+<a href="carrinho.html" class="cart">🛒</a>
+
+</div><!-- ✅ CARROSSEL BONITO --><div class="carousel">
+    <div class="carousel-inner">
+        <div class="slide"><img src="carrosel1.png"></div>
+        <div class="slide"><img src=carrosel2.png></div>
+       <div class="slide final-slide">
+    <img src="carrosselfinal2.png">
+
+    <a class="btn-whats" 
+       href="https://wa.me/5511984254927?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20produtos%20Ki%20Sucesso."
+       target="_blank">
+        Fale Conosco
+    </a>
+</div>
+    </div>
+</div><!-- ✅ GRID DE PRODUTOS PROFISSIONAL --><h2 class="titulo-produtos">Produtos</h2>
+<div class="produtos" id="produtos"><div class="produto">
+    <img src="500gpuru.png">
+    <h3>Pururuca Ki-Sucesso 10×500g</h3>
+    <p class="preco">R$ 104,90</p>
+    <p class="desc">Fardo com 10 pacotes de 500g</p>
+    <div class="qtd-box">
+        <button class="btn-menos">-</button>
+        <input type="number" min="1" value="1" class="qtd-input">
+        <button class="btn-mais">+</button>
+    </div>
+    <button class="add" data-nome="Pururuca Ki-Sucesso 500g" data-preco="104,90" data-img="500gpuru">Adicionar ao Carrinho</button>
+</div>
+
+<div class="produto">
+    <img src="150puru.png">
+    <h3>Pururuca Ki-Sucesso 20×150g</h3>
+    <p class="preco">R$ 59,99</p>
+    <p class="desc">Fardo com 20 pacotes de 150g</p>
+    
+    <div class="qtd-box">
+        <button class="btn-menos">-</button>
+        <input type="number" min="1" value="1" class="qtd-input">
+        <button class="btn-mais">+</button>
+    </div>
+    
+    
+    <button class="add" data-nome="Pururuca Ki-Sucesso 150g" data-preco="59,99" data-img="150puru.png">Adicionar ao Carrinho</button>
+</div>
+
+<div class="produto">
+    <img src="40puru.png">
+    <h3>Pururuca Ki-Sucesso 30×40g</h3>
+    <p class="preco">R$ 24,99</p>
+    <p class="desc">Fardo com 30 pacotes de 40g</p>
+
+    <div class="qtd-box">
+        <button class="btn-menos">-</button>
+        <input type="number" min="1" value="1" class="qtd-input">
+        <button class="btn-mais">+</button>
+    </div>
+
+    <button class="add" data-nome="Pururuca Ki-Sucesso 30×40g" data-preco="24,99" data-img="40puru.png">Adicionar ao Carrinho</button>
+</div>
+
+<div class="produto">
+    <img src="70batchip.png">
+    <h3>Batata-Chips Ki-Sucesso 10×60g</h3>
+    <p class="preco">R$ 39,90</p>
+    <p class="desc">Fardo com 10 pacotes de 60g</p>
+
+    <div class="qtd-box">
+        <button class="btn-menos">-</button>
+        <input type="number" min="1" value="1" class="qtd-input">
+        <button class="btn-mais">+</button>
+    </div>
+
+    <button class="add" data-nome="Batata-Chips Ki-Sucesso 10×60g" data-preco="39,90" data-img="batchip.png">Adicionar ao Carrinho</button>
+</div>
+
+</div><script src="script.js"></script><!-- ✅ SCRIPT DO MENU --><script>
+    const btnMenu = document.getElementById("btnMenu");
+    const btnClose = document.getElementById("btnClose");
+    const menu = document.getElementById("menu");
+    const backdrop = document.getElementById("backdrop");
+
+    btnMenu.onclick = () => {
+        menu.classList.add("open");
+        backdrop.classList.add("show");
+    }
+
+    btnClose.onclick = backdrop.onclick = () => {
+        menu.classList.remove("open");
+        backdrop.classList.remove("show");
+    }
+</script>
+
+
+</body>
+</html>

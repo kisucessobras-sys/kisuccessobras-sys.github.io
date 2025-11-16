@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - Ki-Sucesso</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU LATERAL -->
+<div class="menu-lateral" id="menu">
+    <div class="menu-top">
+        <h2>Menu</h2>
+        <span id="btnClose">✖</span>
+    </div>
+    <a href="index.html">🏠 Início</a>
+    <a href="produtos.html">🛒 Produtos</a>
+    <a href="carrinho.html">🛍 Meu Carrinho</a>
+    <a href="sobre.html">ℹ️ Sobre Nós</a>
+    <a href="contato.html">☎️ Contato</a>
+</div>
+
+<div class="menu-backdrop" id="backdrop"></div>
+
+<!-- TOPO -->
+<div class="topbar">
+    <div class="left-icons">
+        <i id="btnMenu">☰</i>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo Ki-Sucesso">
+        </a>
+    </div>
+
+    <a href="carrinho.html" class="cart">🛒</a>
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="contato-container" style="padding: 20px; max-width: 600px; margin: 30px auto; text-align: center;">
+
+    <h2 style="margin-bottom: 20px;">Fale Conosco</h2>
+
+    <p style="font-size: 17px; margin-bottom: 25px;">
+        Entre em contato conosco pelo WhatsApp para dúvidas, pedidos ou orçamento.
+    </p>
+
+    <!-- BOTÃO WHATSAPP DIRETO NO APP -->
+    <a href="whatsapp://send?phone=5511984254927&text=Olá,%20gostaria%20de%20conhecer%20os%20produtos%20Ki-Sucesso!"
+       class="btn-whatsapp"
+       style="
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+       ">
+        📱 Falar no WhatsApp
+    </a>
+
+    <p style="margin-top: 25px; font-size: 15px; opacity: 0.8;">
+        Atendimento de segunda a sábado.
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- SCRIPT MENU -->
+<script>
+    const btnMenu = document.getElementById("btnMenu");
+    const btnClose = document.getElementById("btnClose");
+    const menu = document.getElementById("menu");
+    const backdrop = document.getElementById("backdrop");
+
+    btnMenu.onclick = () => {
+        menu.classList.add("open");
+        backdrop.classList.add("show");
+    };
+
+    btnClose.onclick = backdrop.onclick = () => {
+        menu.classList.remove("open");
+        backdrop.classList.remove("show");
+    };
+</script>
+
+</body>
+</html>
