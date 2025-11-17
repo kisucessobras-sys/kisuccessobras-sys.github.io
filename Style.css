@@ -101,14 +101,13 @@ body {
 
 /* CARROSSEL */
 .carousel {
-    margin: 30px ;
+    margin: 30px auto;        /* CENTRALIZA */
     max-width: 1200px;
-    overflow: hidden;
+    overflow: hidden;         /* NECESSÁRIO PRO SLIDE */
     border-radius: 12px;
     padding: 6px 0;
-    display: flex;
-    justify-content: center;
     width: 100%;
+    display: block;           /* <<< ESSENCIAL: NÃO USAR FLEX */
 }
 
 .carousel-inner {
@@ -117,6 +116,7 @@ body {
     transition: transform 0.5s ease;
     will-change: transform;
 }
+
 
 .carousel .slide {
     min-width: calc(100% - 40px);
