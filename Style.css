@@ -1,3 +1,5 @@
+altera somente isso pra mim sem mexer em nada no codigo
+
 /* style.css - Ki-Sucesso */
 
 /* reset simples */
@@ -127,20 +129,13 @@ body {
 }
 
 .carousel img {
-    width: 100%;
-    max-width: 980px;
-    height: auto;
-    object-fit: contain;
+    width: 100%;         /* ocupa toda a largura do container */
+    max-width: 980px;    /* opcional, limita largura máxima */
+    height: auto;        /* altura ajusta proporcionalmente */
+    object-fit: contain;  /* mantém toda a imagem visível, sem cortar */
     border-radius: 10px;
     display: block;
-}
 
-/* 🔥 CENTRALIZAÇÃO NO DESKTOP — ÚNICA ALTERAÇÃO */
-@media (min-width: 900px) {
-    .carousel-inner {
-        max-width: 900px;
-        margin: 0 auto;
-    }
 }
 
 /* SLIDE FINAL COM BOTÃO DO WHATSAPP */
@@ -234,7 +229,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin: 10px auto;
+    margin: 10px auto; /* centraliza dentro do card */
 }
 
 .qtd-box button {
@@ -294,4 +289,3 @@ body {
     .produto img { height: 220px; }
     .produtos { gap: 20px; }
 }
-
