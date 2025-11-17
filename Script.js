@@ -37,7 +37,7 @@ document.addEventListener("click", function (e) {
     if (e.target && e.target.classList && e.target.classList.contains("add")) {
         const botao = e.target;
         const nome = botao.dataset.nome;
-        const preco = Number(botao.dataset.preco);
+        const preco = Number(botao.dataset.preco.replace(",", "."));
         const img = botao.dataset.img || "";
         // pega input irmão dentro do produto (se existir)
         const container = botao.closest(".produto");
